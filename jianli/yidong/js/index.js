@@ -10,32 +10,32 @@ $(function(){
 	})
 	page1();
 	function page1(){  //第一页
-//		var html=`<div id='page1'>
-//				<ul id='list'>
-//					<li></li>
-//					<li></li>
-//					<li></li>
-//					<li></li>
-//					<li></li>
-//					<li></li>
-//					<li></li>
-//					<li></li>
-//					<li></li>
-//					<li></li>
-//					<li></li>
-//					<li ></li>
-//					<li></li>
-//					<li>
-//						<div class='zi'>
-//							<p>过往那些平淡的场景</p>
-//							<p>因为你的存在</p>
-//							<p>变成了我最美好的回忆</p>
-//						</div>
-//					</li>
-//				</ul>
-//				<div id='next'></div>
-//			</div>`;
-//		$('#page_one').html(html);
+		var html=`<div id='page1'>
+				<ul id='list'>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li ></li>
+					<li></li>
+					<li>
+						<div class='zi'>
+							<p>过往那些平淡的场景</p>
+							<p>因为你的存在</p>
+							<p>变成了我最美好的回忆</p>
+						</div>
+					</li>
+				</ul>
+				<div id='next'></div>
+			</div>`;
+		$('#page_one').html(html);
 		$('#page_one').fadeIn(1000,function(){
 		
 		$('#list li').eq(0).fadeIn(20,function(){
@@ -104,27 +104,27 @@ $(function(){
 			page2()
 		});
 		function page2(){  // 第二页
-//			var html2=`<ul id='list1'>
-//				<li></li>
-//				<li></li>
-//				<li></li>
-//				<li></li>
-//				<li></li>
-//				<li></li>
-//				<li></li>
-//				<li></li>
-//				<li></li>
-//				<li></li>
-//				<li></li>
-//				<li>
-//					<div class='zi'>
-//						<p>过往那些平淡的场景</p>
-//						<p>因为你的存在</p>
-//						<p>变成了我最美好的回忆</p>
-//					</div>
-//				</li>
-//			</ul>`;
-//			$('#page_two').html(html2)
+			var html2=`<ul id='list1'>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li>
+					<div class='zi'>
+						<p>过往那些平淡的场景</p>
+						<p>因为你的存在</p>
+						<p>变成了我最美好的回忆</p>
+					</div>
+				</li>
+			</ul>`;
+			$('#page_two').html(html2)
 			$('#page_one').fadeOut(1500,function(){
 				$('#page_two').fadeIn(100,function(){
 					$('#list1 li').eq(0).fadeIn(200,function(){
@@ -226,27 +226,27 @@ $(function(){
 				page3();
 			})
 			function page3(){   //第三页
-//				var html3=`<div id='page3'>
-//								<ul id='list3'>
-//									<li></li>
-//									<li></li>
-//									<li>
-//										<div class='zi'>
-//											<p>你坐在我旁边</p>
-//											<p>见了我就脸红</p>
-//											<p>我坐在你旁边</p>
-//											<p>永远看不够你</p>
-//										</div>
-//									</li>
-//									<li></li>
-//									<li></li>
-//									<li></li>
-//									<li></li>
-//									<li></li>
-//									<li></li>
-//								</ul>
-//							</div>`;
-//						$('#page_three').html(html3)	
+				var html3=`<div id='page3'>
+								<ul id='list3'>
+									<li></li>
+									<li></li>
+									<li>
+										<div class='zi'>
+											<p>你坐在我旁边</p>
+											<p>见了我就脸红</p>
+											<p>我坐在你旁边</p>
+											<p>永远看不够你</p>
+										</div>
+									</li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>`;
+						$('#page_three').html(html3)	
 				$('#page_two').fadeOut(100,function(){
 					$('#page_three').fadeIn(100,function(){
 						$('#list3 li').eq(0).fadeIn(100,function(){
@@ -310,22 +310,22 @@ $(function(){
 						page4();
 				});
 				function page4(){   //第四页
-//					var html4=`<div id='page4'>
-//									<ul id='list4'>
-//										<li></li>
-//										<li></li>
-//										<li>大学四年</li>
-//										<li>有个人给你绑了四年鞋带了</li>
-//										<li></li>
-//										<li></li>
-//										<li></li>
-//										<li></li>
-//										<li></li>
-//										<li></li>
-//										<li></li>
-//									</ul>
-//								</div>`;
-//					$('#page_four').html(html4)
+					var html4=`<div id='page4'>
+									<ul id='list4'>
+										<li></li>
+										<li></li>
+										<li>大学四年</li>
+										<li>有个人给你绑了四年鞋带了</li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>`;
+					$('#page_four').html(html4)
 					$('#page_three').fadeOut(100,function(){
 						$('#page_four').fadeIn(100,function(){
 							$('#list4 li').eq(0).fadeIn(100,function(){
@@ -394,25 +394,25 @@ $(function(){
 							page5();
 					});
 					function page5(){     //第五页
-//						var html5=`<div id='page5'>
-//										<ul id='list5'>
-//											<li></li>
-//											<li></li>
-//											<li>
-//												<div class='zi'>
-//													<p>我们一起在大城市打拼</p>
-//													<p>十平米的房间里</p>
-//													<p>我们挤着一张单人床</p>
-//												</div>
-//											</li>
-//											<li></li>
-//											<li></li>
-//											<li></li>
-//											<li></li>
-//											<li></li>
-//										</ul>
-//									</div>`;
-//						$('#page_five').html(html5)
+						var html5=`<div id='page5'>
+										<ul id='list5'>
+											<li></li>
+											<li></li>
+											<li>
+												<div class='zi'>
+													<p>我们一起在大城市打拼</p>
+													<p>十平米的房间里</p>
+													<p>我们挤着一张单人床</p>
+												</div>
+											</li>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+										</ul>
+									</div>`;
+						$('#page_five').html(html5)
 						$('#page_four').fadeOut(100,function(){
 							$('#page_five').fadeIn(100,function(){
 								$('#list5 li').eq(1).fadeIn(400,function(){
@@ -464,24 +464,24 @@ $(function(){
 								page6();
 						});
 						function page6(){       //第六页
-//							var html6=`<div id='page6'>
-//											<ul id='list6'>
-//												<li></li>
-//												<li></li>
-//												<li>
-//													<div class='zi'>
-//														<p>最温馨的时刻</p>
-//														<p>我们有了自己真正的家</p>
-//													</div>
-//												</li>
-//												<li></li>
-//												<li></li>
-//												<li></li>
-//												<li></li>
-//												<li></li>
-//											</ul>
-//										</div>`;
-//							$('#page_six').html(html6)			
+							var html6=`<div id='page6'>
+											<ul id='list6'>
+												<li></li>
+												<li></li>
+												<li>
+													<div class='zi'>
+														<p>最温馨的时刻</p>
+														<p>我们有了自己真正的家</p>
+													</div>
+												</li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li></li>
+											</ul>
+										</div>`;
+							$('#page_six').html(html6)			
 							$('#page_five').fadeOut(100,function(){
 								$('#page_six').fadeIn(100,function(){
 									$('#list6 li').eq(0).fadeIn(100,function(){
@@ -536,21 +536,21 @@ $(function(){
 									page7();
 							});
 							function page7(){    //第七页
-//								var html7=`<div id='page7'>
-//										<ul id='list7'>
-//											<li></li>
-//											<li></li>
-//											<li>你说</li>
-//											<li>两个人一条狗</li>
-//											<li>就差个娃了</li>
-//											<li></li>
-//											<li></li>
-//											<li></li>
-//											<li></li>
-//											<li></li>
-//										</ul>
-//									</div>`;
-//								$('#page_seven').html(html7)
+								var html7=`<div id='page7'>
+										<ul id='list7'>
+											<li></li>
+											<li></li>
+											<li>你说</li>
+											<li>两个人一条狗</li>
+											<li>就差个娃了</li>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+										</ul>
+									</div>`;
+								$('#page_seven').html(html7)
 								$('#page_six').fadeOut(100,function(){
 									$('#page_seven').fadeIn(100,function(){
 										$('#list7 li').eq(0).fadeIn(100,function(){
@@ -616,25 +616,25 @@ $(function(){
 										page8();
 								});
 								function page8(){  //第八页
-//									var html8=`<div id='page8'>
-//													<ul id='list8'>
-//														<li></li>
-//														<li>
-//															<div class='zi'>
-//																<p>你像孩子一样</p>
-//																<p>要在睡前听我讲故事</p>
-//																<p>而我最喜欢我们的故事</p>
-//															</div>
-//														</li>
-//														<li></li>
-//														<li></li>
-//														<li></li>
-//														<li></li>
-//														<li></li>
-//														<li></li>
-//													</ul>
-//												</div>`;
-//									$('#page_eight').html(html8)			
+									var html8=`<div id='page8'>
+													<ul id='list8'>
+														<li></li>
+														<li>
+															<div class='zi'>
+																<p>你像孩子一样</p>
+																<p>要在睡前听我讲故事</p>
+																<p>而我最喜欢我们的故事</p>
+															</div>
+														</li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+													</ul>
+												</div>`;
+									$('#page_eight').html(html8)			
 									$('#page_seven').fadeOut(100,function(){
 										$('#page_eight').fadeIn(100,function(){
 											$('#list8 li').eq(0).fadeIn(400,function(){
@@ -681,18 +681,18 @@ $(function(){
 											page9();
 									});
 									function page9(){   //第九页
-//										var html9=`<div id='page9'>
-//														<ul id='list9'>
-//															<li></li>
-//															<li></li>
-//															<li></li>
-//															<li></li>
-//															<li></li>
-//															<li></li>
-//															<li></li>
-//														</ul>
-//													</div>`;
-//										$('#page_nine').html(html9)			
+										var html9=`<div id='page9'>
+														<ul id='list9'>
+															<li></li>
+															<li></li>
+															<li></li>
+															<li></li>
+															<li></li>
+															<li></li>
+															<li></li>
+														</ul>
+													</div>`;
+										$('#page_nine').html(html9)			
 										$('#page_eight').fadeOut(100,function(){
 											$('#page_nine').fadeIn(100,function(){
 												$('#list9 li').eq(0).fadeIn(100,function(){
