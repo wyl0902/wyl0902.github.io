@@ -1,30 +1,66 @@
 $(function(){
 	var onoff=false;
+	$('#aud')[0].play()
 	$('#bgm').on('click',function(){
 		if(onoff){
 			$('#aud')[0].play()   //播放
+			$('#bgm').css('animation-play-state','running');
 		}else{
 			$('#aud')[0].pause()  //暂停
+			$('#bgm').css('animation-play-state','paused');
 		}
 		onoff=!onoff
 	})
 	page1();
+	var img={
+		sff:[
+			'',
+		],
+	}
+	for (var attr in img) {
+		var imglength=attr.length
+	}
 	function page1(){  //第一页
 		var html=`<div id='page1'>
 				<ul id='list'>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li ></li>
-					<li></li>
+					<li>
+						<img src="img/chuan11.png" />
+					</li>
+					<li>
+						<img src="img/boli11.png"/>
+					</li>
+					<li>
+						<img src="img/bg2.png"/>
+					</li>
+					<li>
+						<img src="img/bj5.png"/>
+					</li>
+					<li>
+						<img src="img/bg1.png"/>
+					</li>
+					<li>
+						<img src="img/xi.png"/>
+					</li>
+					<li>
+						<img src="img/bg9.png"/>
+					</li>
+					<li>
+						<img src="img/bg8.png"/>
+					</li>
+					<li>
+						<img src="img/bg6.png"/>
+					</li>
+					<li>
+						<img src="img/bg7.png"/>
+					</li><li>
+						<img src="img/bg4.png"/>
+					</li>
+					<li>
+						<img src="img/bg3.png"/>
+					</li>
+					<li>
+						<img src="img/bi2.png"/>
+					</li>
 					<li>
 						<div class='zi'>
 							<p>过往那些平淡的场景</p>
@@ -105,23 +141,36 @@ $(function(){
 		});
 		function page2(){  // 第二页
 			var html2=`<ul id='list1'>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li>
+					<img src="img/bg3.png"/>
+				</li>
+				<li>
+					<img src="img/bg6.png"/>
+				</li>
+				<li>
+					<img src="img/bg4.png"/>
+				</li>
+				<li>
+					<img src="img/bg8.png"/>
+				</li>
+				<li>
+					<img src="img/bg9.png"/>
+				</li>
+				<li>
+					<img src="img/bg7.png"/>
+				</li>
 				<li></li>
 				<li>
-					<div class='zi'>
-						<p>过往那些平淡的场景</p>
-						<p>因为你的存在</p>
-						<p>变成了我最美好的回忆</p>
-					</div>
+				 	<img src="img/bi2.png"/>
+				</li>
+				<li>
+					<img src="img/zi2.png"/>
+				</li>
+				<li>
+					<img src="img/back.png"/>
+				</li>
+				<li>
+					<img src="img/next.png"/>
 				</li>
 			</ul>`;
 			$('#page_two').html(html2)
@@ -228,8 +277,12 @@ $(function(){
 			function page3(){   //第三页
 				var html3=`<div id='page3'>
 								<ul id='list3'>
-									<li></li>
-									<li></li>
+									<li>
+										<img src="img/bg11.png"/>
+									</li>
+									<li>
+										<img src="img/bg111.png"/>
+									</li>
 									<li>
 										<div class='zi'>
 											<p>你坐在我旁边</p>
@@ -238,12 +291,24 @@ $(function(){
 											<p>永远看不够你</p>
 										</div>
 									</li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
+									<li>
+										<img src="img/dan5.png"/>
+									</li>
+									<li>
+										<img src="img/bg11.jpg"/>
+									</li>
+									<li>
+										<img src="img/bg3.png"/>
+									</li>
+									<li>
+										<img src="img/bi.png"/>
+									</li>
+									<li>
+										<img src="img/back.png"/>
+									</li>
+									<li>
+										<img src="img/next.png"/>
+									</li>
 								</ul>
 							</div>`;
 						$('#page_three').html(html3)	
@@ -312,17 +377,32 @@ $(function(){
 				function page4(){   //第四页
 					var html4=`<div id='page4'>
 									<ul id='list4'>
-										<li></li>
-										<li></li>
+										<li>
+											<img src="img/hen11.png"/>
+										</li>
+										<li>
+											<img src="img/hen1.png"/>
+										</li>
 										<li>大学四年</li>
 										<li>有个人给你绑了四年鞋带了</li>
-										<li></li>
-										<li></li>
-										<li></li>
-										<li></li>
-										<li></li>
-										<li></li>
-										<li></li>
+										<li>
+											<img src="img/dan8.png"/>
+										</li>
+										<li>
+											<img src="img/hou1.png"/>
+										</li>
+										<li>
+											<img src="img/bg8.png"/>
+										</li>
+										<li>
+											<img src="img/bi.png"/>
+										</li>
+										<li>
+											<img src="img/back.png"/>
+										</li>
+										<li>
+											<img src="img/next.png"/>
+										</li>
 									</ul>
 								</div>`;
 					$('#page_four').html(html4)
@@ -396,8 +476,12 @@ $(function(){
 					function page5(){     //第五页
 						var html5=`<div id='page5'>
 										<ul id='list5'>
-											<li></li>
-											<li></li>
+											<li>
+												<img src="img/chuan2.jpeg"/>
+											</li>
+											<li>
+												<img src="img/dan3.png"/>
+											</li>
 											<li>
 												<div class='zi'>
 													<p>我们一起在大城市打拼</p>
@@ -405,11 +489,21 @@ $(function(){
 													<p>我们挤着一张单人床</p>
 												</div>
 											</li>
-											<li></li>
-											<li></li>
-											<li></li>
-											<li></li>
-											<li></li>
+											<li>
+												<img src="img/hou2.png"/>
+											</li>
+											<li>
+												<img src="img/bg6.png"/>
+											</li>
+											<li>
+												<img src="img/bi.png"/>
+											</li>
+											<li>
+												<img src="img/back.png"/>
+											</li>
+											<li>
+												<img src="img/next.png"/>
+											</li>
 										</ul>
 									</div>`;
 						$('#page_five').html(html5)
@@ -466,19 +560,33 @@ $(function(){
 						function page6(){       //第六页
 							var html6=`<div id='page6'>
 											<ul id='list6'>
-												<li></li>
-												<li></li>
+												<li>
+													<img src="img/dan4.png"/>
+												</li>
+												<li>
+													<img src="img/dan2.png"/>
+												</li>
 												<li>
 													<div class='zi'>
 														<p>最温馨的时刻</p>
 														<p>我们有了自己真正的家</p>
 													</div>
 												</li>
-												<li></li>
-												<li></li>
-												<li></li>
-												<li></li>
-												<li></li>
+												<li>
+													<img src="img/hou3.png"/>
+												</li>
+												<li>
+													<img src="img/bg9.png"/>
+												</li>
+												<li>
+													<img src="img/bi.png"/>
+												</li>
+												<li>
+													<img src="img/back.png"/>
+												</li>
+												<li>
+													<img src="img/next.png"/>
+												</li>
 											</ul>
 										</div>`;
 							$('#page_six').html(html6)			
@@ -538,16 +646,30 @@ $(function(){
 							function page7(){    //第七页
 								var html7=`<div id='page7'>
 										<ul id='list7'>
-											<li></li>
-											<li></li>
+											<li>
+												<img src="img/dan6.png"/>
+											</li>
+											<li>
+												<img src="img/dan7.png"/>
+											</li>
 											<li>你说</li>
 											<li>两个人一条狗</li>
 											<li>就差个娃了</li>
-											<li></li>
-											<li></li>
-											<li></li>
-											<li></li>
-											<li></li>
+											<li>
+												<img src="img/hou4.png"/>
+											</li>
+											<li>
+												<img src="img/bg7.png"/>
+											</li>
+											<li>
+												<img src="img/bi.png"/>
+											</li>
+											<li>
+												<img src="img/back.png"/>
+											</li>
+											<li>
+												<img src="img/next.png"/>
+											</li>
 										</ul>
 									</div>`;
 								$('#page_seven').html(html7)
@@ -618,7 +740,9 @@ $(function(){
 								function page8(){  //第八页
 									var html8=`<div id='page8'>
 													<ul id='list8'>
-														<li></li>
+														<li>
+															<img src="img/chuan.jpeg"/>
+														</li>
 														<li>
 															<div class='zi'>
 																<p>你像孩子一样</p>
@@ -626,12 +750,24 @@ $(function(){
 																<p>而我最喜欢我们的故事</p>
 															</div>
 														</li>
-														<li></li>
-														<li></li>
-														<li></li>
-														<li></li>
-														<li></li>
-														<li></li>
+														<li>
+															<img src="img/dan1.png"/>
+														</li>
+														<li>
+															<img src="img/hou5.png"/>
+														</li>
+														<li>
+															<img src="img/bg4.png"/>
+														</li>
+														<li>
+															<img src="img/bi.png"/>
+														</li>
+														<li>
+															<img src="img/back.png"/>
+														</li>
+														<li>
+															<img src="img/next.png"/>
+														</li>
 													</ul>
 												</div>`;
 									$('#page_eight').html(html8)			
@@ -683,13 +819,30 @@ $(function(){
 									function page9(){   //第九页
 										var html9=`<div id='page9'>
 														<ul id='list9'>
-															<li></li>
-															<li></li>
-															<li></li>
-															<li></li>
-															<li></li>
-															<li></li>
-															<li></li>
+															<li>
+																<img src="img/hou6.png"/>
+															</li>
+															<li>
+																<img src="img/xiabai.png"/>
+															</li>
+															<li>
+																<img src="img/gf.gif"/>
+															</li>
+															<li>
+																<img src="img/gf.gif"/>
+															</li>
+															<li>
+																<img src="img/zi1.png"/>
+															</li>
+															<li>
+																<img src="img/bg2.png"/>
+															</li>
+															<li>
+																<img src="img/chuan11.png"/>
+															</li>
+															<li>
+																<img src="img/back.png"/>
+															</li>
 														</ul>
 													</div>`;
 										$('#page_nine').html(html9)			
@@ -715,13 +868,21 @@ $(function(){
 														})
 														$(this).next().next().next().fadeIn(100,function(){
 															$(this).css('opacity','1');
+															$(this).next().fadeIn(100,function(){
+																$(this).css('opacity','1');
+															})
 														})
 														
 													})
 												})
 											})
 										})
-									}
+									};
+									$('#list9 li').eq(8).on('click',function(){
+										$('#page_eight').fadeOut(100,function(){
+											page8();
+										})
+									})
 								}
 							}
 						}
